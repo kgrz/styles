@@ -6,3 +6,13 @@
    so that there is no need to push the changes in this repo and pick
    them up in the other repos while in development. The CSS in these
    files can be edited and he changes can be seen immediately.
+
+
+To link a npm package that has not been published yet, the following
+command can be used. That said, it won't add the linked package details
+to the target repo's `package.json`.
+
+    npm link @codemancers/styles ../styles <git remote url>
+
+If the module is already installed, then running the above link command
+won't work. Just the plain `npm link ../styles` will do.
