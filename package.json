@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kashyap",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgrz/styles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kgrz/styles/issues"
+  },
+  "homepage": "https://github.com/kgrz/styles#readme"
 }
