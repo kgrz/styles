@@ -1,0 +1,11 @@
+{
+  "name": "styles",
+  "version": "1.0.0",
+  "description": "Styles for Codemancers' blogs and main website extracted out of the Nanoc repos",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kashyap",
+  "license": "MIT"
+}
