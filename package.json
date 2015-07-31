@@ -1,5 +1,5 @@
 {
-  "name": "styles",
+  "name": "@codemancers/styles",
   "version": "1.0.0",
   "description": "Styles for Codemancers' blogs and main website extracted out of the Nanoc repos",
   "main": "Gruntfile.js",
