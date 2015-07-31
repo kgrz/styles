@@ -1,0 +1,24 @@
+* Copy styles from tips to this repo
+* Add a grunt task that would minify and gzip CSS
+* Another task that would publish the styles to S3. When the file gets
+  saved on S3, it should add that entry to a file named `url` under each
+  target repo. This will be read by nanoc when the deploy happens.
+
+
+  There is one complication here. When the blog/website is deployed, the
+  npm package is fetched from the git repository. So when a change is
+  made to CSS, it has to be ensured that those are pushed to GH *before*
+  the website/blog is deployed. And potentially, for every change in CSS
+  in this repo, the blog has to be redeployed. That can be another task.
+
+  That is, when the styles are changed here, and the PR gets merged
+  to master on this repo's upstream, it will trigger a hook that will
+  re-deploy the blog. And that will ensure that the changes made here
+  are picked up.
+
+
+On tips side:
+
+In development env, the CSS to be used will be fetched locally.
+In production env, the CSS to be used should be picked up from the
+`styles` repo's S3 urls.
