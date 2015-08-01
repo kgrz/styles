@@ -23,6 +23,13 @@ module.exports = function(grunt) {
             dest: "dist/stylesheets/codemancers",
             ext: ".css"
           },
+          {
+            expand: true,
+            cwd: "stylesheets/business_blog",
+            src: ["*.scss"],
+            dest: "dist/stylesheets/business_blog",
+            ext: ".css"
+          },
         ]
       }
     },
