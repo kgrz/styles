@@ -1,0 +1,123 @@
+@import "_variables";
+@import "_mixins";
+
+
+.social-header {
+  width: 210px;
+  float: right;
+  text-align: right;
+}
+
+.social-content {
+  clear: both;
+  line-height: 1.2;
+}
+
+.social-content span {
+  display: inline-block;
+  overflow: hidden;
+  -webkit-transition: width 0.3s linear;
+  width: auto;
+  vertical-align: middle;
+}
+
+.social-content {
+  clear: both;
+  line-height: 1.2;
+}
+
+.social-content span {
+  width: auto;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: width .3s linear;
+}
+
+.social-content span.hide {
+  width: 0!important;
+  -webkit-transition: width .1s linear;
+}
+
+.social-content span.at-sign {
+  width: 18px;
+  color: #049cdb;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.social-content span.facebook-com {
+  width: 97px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.social-content span.github-com {
+  width: 82px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.social-content span.fname {
+  color: #555;
+  width: 30px;
+  font-size: 14px;
+}
+
+.social-content span.dot {
+  width: 7px;
+  color: #555;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  font-family: Georgia,'Times New Roman',Times,serif;
+}
+
+.social-content span.lname {
+  width: 55px;
+  color: #555;
+  font-size: 14px;
+}
+
+.social-content span.at-email {
+  width: 81px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.social-links {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: top;
+
+  li {
+    display: inline-block;
+    margin: 0px 0px 0px 5px;
+    padding: 0px;
+    vertical-align: top;
+
+    a {
+      width: 28px;
+      height: 28px;
+      display: block;
+      background: transparent url('../img/icons-sprite.png') no-repeat;
+
+      &.twitter {
+        background-position: -3px -2px;
+      }
+
+      &.facebook {
+        background-position: -38px -2px;
+      }
+
+      &.github {
+        background-position: -73px -2px;
+      }
+
+      &.email {
+        background-position: -108px -2px;
+      }
+    }
+  }
+}

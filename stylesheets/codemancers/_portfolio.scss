@@ -1,0 +1,8 @@
+@import "_variables";
+@import "_mixins";
+
+.portfolio img {
+  padding: 10px;
+  margin-top: 20px;
+  @include box-shadow(0 0 10px 0 rgba(0, 0, 0, 0.5));
+}

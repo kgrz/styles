@@ -1,0 +1,120 @@
+@import "_variables";
+@import "_mixins";
+
+.open-source-item, .icon-star, .icon-fork {
+  background: transparent url('../img/sprite-open-source.png') no-repeat -440px 0;
+}
+
+.open-source-list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  list-style-type: none;
+
+  li {
+    min-height: 90px;
+    position: relative;
+    margin: 40px 0 0 0;
+    padding: 0 0 40px 180px;
+    border-bottom: 1px dotted #ccc;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+}
+
+.open-source-item {
+  top: 5px;
+  left: 37px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 8px;
+  display: inline-block;
+  border: 2px solid #eee;
+  background-position: 0 0;
+  @include box-shadow(0 1px 0 #ddd);
+}
+.invoker {
+  background-position: -110px 0;
+}
+.rbkit {
+  background-position: -220px 0;
+}
+.icon-star, .icon-fork {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+.icon-star {
+  background-position: -330px -40px;
+}
+.icon-fork {
+  background-position: -330px -10px;
+}
+.btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn:hover {
+  text-decoration: none;
+}
+.btn-label {
+  color: #666;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #DDD;
+  background-color: #eee;
+  padding: 4px 15px 4px 5px;
+  border-bottom-color: #ccc;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  @include box-shadow(0 1px 3px rgba(0, 0, 0, 0.05));
+}
+.btn-label:after {
+  top: 50%;
+  right: -5px;
+  content: '';
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #fff;
+  @include box-shadow(-2px 0 1px #ccc);
+}
+.btn:hover .btn-label {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+.count {
+  color: #333;
+  border-left: 0;
+  font-weight: bold;
+  border-left: none;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #DDD;
+  padding: 4px 10px 4px 10px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.btn:hover .count {
+  color: #08c;
+}
+
