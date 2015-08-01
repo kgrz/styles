@@ -1,0 +1,42 @@
+@import "_variables";
+@import "_mixins";
+
+
+a {
+  color: #0088cc;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: #369;
+    text-decoration: underline;
+  }
+
+  &:focus, &:active, &:hover {
+    outline: 0;
+    outline-offset: -2px;
+  }
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 750px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
